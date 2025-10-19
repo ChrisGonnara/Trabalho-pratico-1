@@ -22,41 +22,17 @@
         <h1>CachorrosPet</h1>
     </header>
 
-    <main class="container mt-4"> <section class="destaques">
+    <main class="container mt-4">
+        <section class="destaques">
             <h2>Destaques</h2>
             
             <div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="../pages/raca.html">
-                            <img src="../imgs/boiadeiro/boiadeiro1.jpg" class="d-block w-100 carousel-img" alt="Foto da Raça 1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Raça 1</h5>
-                            </div>
-                        </a>
+                <div class="carousel-indicators" id="carousel-indicadores">
                     </div>
-                    <div class="carousel-item">
-                        <a href="../pages/raca.html">
-                            <img src="../imgs/rotwhiller/rot3.jpg" class="d-block w-100 carousel-img" alt="Foto dos rotwhillers">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Raça 2</h5>
-                            </div>
-                        </a>
+                
+                <div class="carousel-inner" id="carousel-inner-container">
                     </div>
-                    <div class="carousel-item">
-                        <a href="../pages/raca.html">
-                            <img src="../imgs/pug/pug4.jpg" class="d-block w-100 carousel-img" alt="Foto-Pug">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Raça 3</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -68,58 +44,11 @@
             </div>
         </section>
 
-        <section class="todas-racas mt-5"> <h2>todas as raças</h2>
+        <section class="todas-racas mt-5">
+            <h2>todas as raças</h2>
             
-            <div class="row g-3">
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="raca.html" class="card-raca">
-                        <img src="../imgs/boiadeiro/boiadeiro1.jpg" alt="Boiadeiro dog">
-                        <span>Boiadeiro Australiano</span>
-                    </a>
+            <div class="row g-3" id="grid-todas-racas">
                 </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="../pages/raca.html" class="card-raca">
-                        <img src="../imgs/border/border1.jpg" alt="Border Dog">
-                        <span>Border Collie</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="../pages/raca.html" class="card-raca">
-                        <img src="../imgs/pinscher/pinscher3.jpg" alt="Pinscher">
-                        <span>Pinscher</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="../pages/raca.html" class="card-raca">
-                        <img src="../imgs/pug/pug3.jpg" alt="Raça 4">
-                        <span>Pug</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="../pages/raca.html" class="card-raca">
-                        <img src="../imgs/rotwhiller/rot4.jpg" alt="Rotwhiller">
-                        <span>Rotwhiller</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="../pages/raca.html" class="card-raca">
-                        <img src="../imgs/salsicha/salsicha1.jpg" alt="Salsicha">
-                        <span>Salsicha6</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="../pages/raca.html" class="card-raca">
-                        <img src="../imgs/chihuahua/chi3.jpg" alt="chihuahua">
-                        <span>Chihuahua</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="../pages/raca.html" class="card-raca">
-                        <img src="../imgs/golden/golden3.jpg" alt="Golden dog">
-                        <span>Golden8</span>
-                    </a>
-                </div>
-            </div>
         </section>
     </main>
 
@@ -134,7 +63,8 @@
                 </div>
                 <div class="col-md-6">
                     <h3>redes sociais:</h3>
-                    <ul class="list-unstyled"> <li><a href="#" class="text-white">LinkedIn</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">LinkedIn</a></li>
                         <li><a href="#" class="text-white">Instagram</a></li>
                         <li><a href="#" class="text-white">GitHub</a></li>
                     </ul>
@@ -144,5 +74,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script src="../js/data.js"></script>
+    <script src="../js/script-index.js"></script>
 </body>
 </html>

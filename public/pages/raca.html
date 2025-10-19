@@ -1,4 +1,4 @@
-<!DOCTYPE html:5>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,8 @@
     <!--/fontes google fontes-->
 </head>
 
-<body class="d-flex flex-column min-vh-100">>
+<body class="d-flex flex-column min-vh-100">
+
     <header class="d-flex justify-content-between align-items-center p-3 border-bottom bg-white">
         <a href="index.html" class="logo">
             <img src="../imgs/logo.png" alt="Logo do Site">
@@ -25,22 +26,18 @@
     <main class="container mt-4">
         
         <section class="info-geral">
-            <h2>informacao geral</h2>
+            <h2>informacao geral: <span id="titulo-raca">Carregando...</span></h2>
             
             <div class="row info-container">
                 <div class="col-md-5">
                     <div class="foto-principal">
-                        <img src="../imgs/boiadeiro/boiadeiro1.jpg" alt="Foto principal da raça" class="img-fluid rounded"> </div>
+                        <img src="https://via.placeholder.com/400x400?text=Carregando" alt="Foto principal da raça" class="img-fluid rounded" id="imagem-principal-raca">
+                    </div>
                 </div>
                 <div class="col-md-7">
                     <div class="caracteristicas">
-                        <h3>Boiadeiro Australiano</h3>
-                        <ul class="list-group"> 
-                            <li class="list-group-item"> leal, corajoso e protetor, sendo um excelente guardião da família e da propriedade.</li>
-                            <li class="list-group-item">Porte médio com musculatura evidente, conferindo força e agilidade para o trabalho no campo e pastoreio.</li>
-                            <li class="list-group-item">Inteligência elevada e alta energia, tornando-o um trabalhador ágil e eficiente, com necessidade de atividade física.</li>
-                            <li class="list-group-item">Alta necessidade de exercícios e estímulos mentais devido à sua energia e inteligência elevadas, o que o torna ideal para famílias ativas e ambientes rurais.</li>
-                        </ul>
+                        <h3>Características desta raça:</h3>
+                        <ul class="list-group" id="lista-caracteristicas"></ul>
                     </div>
                 </div>
             </div>
@@ -48,17 +45,7 @@
 
         <section class="mais-fotos mt-5">
             <h3>mais fotos:</h3>
-            <div class="row g-3">
-                <div class="col-6 col-md-4">
-                    <img src="../imgs/boiadeiro/boiadeiro2.jpg" alt="Foto 2 da raça" class="img-fluid rounded">
-                </div>
-                <div class="col-6 col-md-4">
-                    <img src="../imgs/boiadeiro/boiadeiro3.jpg" alt="Foto 3 da raça" class="img-fluid rounded">
-                </div>
-                <div class="col-6 col-md-4">
-                    <img src="../imgs/boiadeiro/boiadeiro4.jpg" alt="Foto 4 da raça" class="img-fluid rounded">
-                </div>
-            </div>
+            <div class="row g-3" id="grid-mais-fotos"></div>
         </section>
 
     </main>
@@ -85,5 +72,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script src="../js/data.js"></script>
+    <script src="../js/script-raca.js"></script>
 </body>
 </html>
