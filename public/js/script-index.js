@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nomesRacas.forEach((nomeRaca, index) => {
         const dadosRaca = racas[nomeRaca];
         
-        // --- 1. POPULAR O CARROSSEL (com as 3 primeiras raças) ---
+        // ---O CARROSSEL (com as 3 primeiras raças) ---
         if (index < 3) { 
             const activeClass = index === 0 ? 'active' : ''; 
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         }
         
-        // --- 2. POPULAR O GRID (com todas as raças) ---
+        // --- O GRID (com todas as raças) ---
         const linkRaca = `raca.html?raca=${encodeURIComponent(nomeRaca)}`;
         
         gridHTML += `
