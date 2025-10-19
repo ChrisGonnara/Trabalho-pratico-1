@@ -1,59 +1,122 @@
-*{
-  font-family:"Poppins", sans-serif;
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #cde4de;
+    color: #333;
 }
 
-body{
-  background-color: #F0FFF4;
-  
+/* O .container é do Bootstrap, não precisamos mais dele aqui */
+
+a {
+    text-decoration: none; /* Bootstrap já faz isso, mas podemos garantir */
 }
 
-.interface{ 
-  max-width: 1200px;
-  margin: 0 auto;
+h1, h2, h3 {
+    margin-bottom: 15px;
 }
 
-/* Header Styles */
-header {
-  width: 100%;
-  padding: 30px;
+/* --- Header --- */
+/* O CSS do header foi substituído por classes do Bootstrap no HTML */
+/* (bg-white, p-3, border-bottom, d-flex, justify-content-between, align-items-center) */
+/* Mantemos apenas o estilo customizado do logo */
+header .logo img {
+    height: 50px; 
+    width: auto; 
+    display: block;
 }
 
-header .interface {
-display: flex;
-justify-content: space-between;
-align-items: center;
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
 }
 
-header .logo  img{
-  max-width: 50px;
+/* --- Footer --- */
+/* O CSS do footer foi substituído por classes do Bootstrap */
+/* (bg-dark, text-white, p-4, mt-5, container, row, col-md-6) */
+/* Mantemos estilos específicos se precisarmos */
+footer h3 {
+    border-bottom: 1px solid #41bcaa;
+    padding-bottom: 5px;
 }
 
-header .menu-desktop nav ul{
-  list-style-type: none;
-  gap: 30px;
-  list-style-type: none;
+/* --- Página Principal: Destaques (Carrossel) --- */
+/* A maior parte do CSS do carrossel foi removida */
+/* Adicionamos isso para garantir que as imagens do carrossel cubram o espaço */
+.carousel-img {
+    aspect-ratio: 16 / 9; /* Proporção da imagem (opcional) */
+    object-fit: cover;
+    width: 100%;
 }
 
-header .menu-desktop nav ul li{
-display: inline-block;
-margin: 0 40px
+
+/* --- Página Principal: Todas as Raças (Grid) --- */
+/* A regra .grid-racas foi removida (agora é .row no HTML) */
+
+/* Mantemos o estilo do CARD */
+.card-raca {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    transition: box-shadow 0.3s ease;
+    display: block; /* Garante que o link ocupe o espaço */
+    color: #333; /* Cor do texto do link */
 }
 
-header .menu-desktop nav ul li a{
-  text-decoration: none;
-  color: #000000;
-  font-weight: 500;
-  font-size: 20px;
-  display: inline-block;
-  transition: .2s;
+.card-raca:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
 }
 
-.menu-desktop nav a:hover{
-  color: #4CAF50;
-  transition: all 0.3s ease;
-  transform: scale(1.05);
+.card-raca img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Imagem quadrada */
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #eee;
+    margin: 0 auto; /* Centraliza se a imagem for menor (embora width 100% já faça isso) */
+}
+
+.card-raca span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* --- Página de Detalhes: Info Geral --- */
+/* A regra .info-container (flex) foi removida (agora é .row) */
+.info-container {
+    /* Adicionamos estilos que o Bootstrap não cobre */
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Estilos para a imagem e características ainda são úteis */
+.info-container .foto-principal img {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%; /* Garantido pelo .img-fluid do Bootstrap, mas bom ter */
+}
+
+.info-container .caracteristicas ul {
+    /* O Bootstrap já estiliza o .list-group, então não precisamos de muito */
+    margin-top: 10px;
+}
+
+
+/* --- Página de Detalhes: Mais Fotos --- */
+/* O .grid-mais-fotos foi removido (agora é .row) */
+.grid-mais-fotos img {
+    /* O .img-fluid e .rounded do Bootstrap já cuidam disso */
+    /* Podemos adicionar uma borda se quisermos */
+    border: 1px solid #ccc;
+    background-color: #eee;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
 }
 
