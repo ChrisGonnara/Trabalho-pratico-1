@@ -1,0 +1,19 @@
+.container-slider {
+    display: flex;
+    width: 100%;
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.container-img {
+    width: 25%;
+    transition: .5s;
+}
