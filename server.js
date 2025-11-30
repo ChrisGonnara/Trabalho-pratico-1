@@ -2,9 +2,8 @@ const jsonServer = require('json-server')
 const server = jsonServer.create()
 const router = jsonServer.router('./db/db.json')
 
-// middlewares padrão (logs, CORS, etc.)
 const middlewares = jsonServer.defaults({
-  static: './public'   // <-- garante que a pasta public seja servida
+static: './public'
 })
 
 server.use(middlewares)
