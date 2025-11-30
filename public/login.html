@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - CachorrosPet</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./assets/imgs/logo.png" alt="Logo" style="height:40px;" class="me-2">
+        <span>CachorrosPet</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item d-none" id="menu-cadastro-itens">
+            <a class="nav-link" href="cadastro_itens.html">Cadastro de Itens</a>
+        </li>
+        <li class="nav-item d-none" id="menu-favoritos">
+            <a class="nav-link" href="#favoritos">Favoritos</a>
+        </li>
+        </ul>
+
+        <span class="me-3" id="texto-usuario"></span>
+
+        <a href="login.html" class="btn btn-outline-primary" id="btn-login">Login</a>
+        <button class="btn btn-outline-danger d-none" id="btn-logout">Logout</button>
+    </div>
+    </div>
+</nav>
+
+<main class="container mt-4 mb-5">
+    <div class="row">
+    <div class="col-md-6">
+        <h2>Login</h2>
+        <form id="form-login">
+        <div class="mb-3">
+            <label class="form-label">Login</label>
+            <input type="text" class="form-control" id="login-login" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Senha</label>
+            <input type="password" class="form-control" id="login-senha" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        <div class="mt-2 text-danger" id="login-erro"></div>
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        <h2>Novo usuário</h2>
+        <form id="form-cadastro-usuario">
+        <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control" id="cad-nome" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Login</label>
+            <input type="text" class="form-control" id="cad-login" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="cad-email" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Senha</label>
+            <input type="password" class="form-control" id="cad-senha" required>
+        </div>
+        <button type="submit" class="btn btn-success">Cadastrar</button>
+        <div class="mt-2 text-success" id="cad-sucesso"></div>
+        </form>
+    </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-white p-4 mt-auto">
+    <div class="container">
+    <p>&copy; 2025 CachorrosPet</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/scripts/app.js"></script>
+<script src="./assets/scripts/login.js"></script>
+</body>
+</html>

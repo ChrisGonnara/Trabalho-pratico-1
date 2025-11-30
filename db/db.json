@@ -1,0 +1,167 @@
+{
+"itens": [
+    {
+    "id": 1,
+    "nome": "Boiadeiro Australiano",
+    "descricaoCurta": "Resistente, leal e muito ativo.",
+    "imagemPrincipal": "/assets/imgs/boiadeiro/boiadeiro1.jpg",
+    "caracteristicas": [
+        "Nível de energia: Muito Alto",
+        "Personalidade: Leal, protetor e inteligente",
+        "Pelagem: Dupla e resistente ao clima",
+        "Expectativa de vida: 12-16 anos"
+    ],
+    "maisFotos": [
+        "/assets/imgs/boiadeiro/boiadeiro2.jpg",
+        "/assets/imgs/boiadeiro/boiadeiro3.jpg",
+        "/assets/imgs/boiadeiro/boiadeiro4.jpg"
+    ],
+    "destaque": true
+    },
+    {
+    "id": 2,
+    "nome": "Border Collie",
+    "descricaoCurta": "Extremamente inteligente e ótimo em pastoreio.",
+    "imagemPrincipal": "/assets/imgs/border/border1.jpg",
+    "caracteristicas": [
+        "Nível de energia: Extremamente Alto",
+        "Personalidade: Inteligente, ágil, focado",
+        "Habilidade: Considerado o cão mais inteligente",
+        "Expectativa de vida: 12-15 anos"
+    ],
+    "maisFotos": [
+        "/assets/imgs/border/border2.jpg",
+        "/assets/imgs/border/border3.jpg",
+        "/assets/imgs/border/border4.jpg"
+    ],
+    "destaque": true
+    },
+    {
+    "id": 3,
+    "nome": "Pinscher",
+    "descricaoCurta": "Pequeno, alerta e cheio de energia.",
+    "imagemPrincipal": "/assets/imgs/pinscher/pinscher4.jpg",
+    "caracteristicas": [
+        "Nível de energia: Alto",
+        "Personalidade: Alerta, espirituoso, destemido",
+        "Tamanho: Pequeno, mas robusto",
+        "Expectativa de vida: 12-15 anos"
+    ],
+    "maisFotos": [
+        "/assets/imgs/pinscher/pinscher1.jpg",
+        "/assets/imgs/pinscher/pinscher2.jpg",
+        "/assets/imgs/pinscher/pinscher3.jpg"
+    ],
+    "destaque": true
+    },
+    {
+    "id": 4,
+    "nome": "Pug",
+    "descricaoCurta": "Charmoso, sociável e ótimo cão de companhia.",
+    "imagemPrincipal": "/assets/imgs/pug/pug4.jpg",
+    "caracteristicas": [
+        "Nível de energia: Moderado",
+        "Personalidade: Charmoso, sociável, brincalhão",
+        "Característica: Rosto enrugado e cauda encaracolada",
+        "Expectativa de vida: 12-15 anos"
+    ],
+    "maisFotos": [
+        "/assets/imgs/pug/pug2.jpg",
+        "/assets/imgs/pug/pug3.jpg",
+        "/assets/imgs/pug/pug1.jpg"
+    ],
+    "destaque": false
+    },
+    {
+    "id": 5,
+    "nome": "Rotwhiller",
+    "descricaoCurta": "Confiante, corajoso e excelente cão de guarda.",
+    "imagemPrincipal": "/assets/imgs/rotwhiller/rot4.jpg",
+    "caracteristicas": [
+        "Nível de energia: Médio-Alto",
+        "Personalidade: Confiante, corajoso, leal",
+        "Função: Cão de guarda e companhia",
+        "Expectativa de vida: 8-10 anos"
+    ],
+    "maisFotos": [
+        "/assets/imgs/rotwhiller/rot2.jpg",
+        "/assets/imgs/rotwhiller/rot3.jpg",
+        "/assets/imgs/rotwhiller/rot1.jpg"
+    ],
+    "destaque": false
+    },
+    {
+    "id": 6,
+    "nome": "Salsicha",
+    "descricaoCurta": "Corajoso, curioso e de personalidade marcante.",
+    "imagemPrincipal": "/assets/imgs/salsicha/salsicha1.jpg",
+    "caracteristicas": [
+        "Nível de energia: Médio",
+        "Personalidade: Curioso, amigável, teimoso",
+        "Corpo: Baixo e comprido",
+        "Expectativa de vida: 12-16 anos"
+    ],
+    "maisFotos": [
+        "/assets/imgs/salsicha/salsicha2.jpg",
+        "/assets/imgs/salsicha/salsicha3.jpg",
+        "/assets/imgs/salsicha/salsicha4.jpg"
+    ],
+    "destaque": false
+    },
+    {
+    "id": 7,
+    "nome": "Chihuahua",
+    "descricaoCurta": "Pequeno no tamanho, gigante na personalidade.",
+    "imagemPrincipal": "/assets/imgs/chihuahua/chi3.jpg",
+    "caracteristicas": [
+        "Nível de energia: Alto",
+        "Personalidade: Charmoso, atrevido, leal",
+        "Tamanho: Menor raça do mundo",
+        "Expectativa de vida: 14-16 anos"
+    ],
+    "maisFotos": [
+        "/assets/imgs/chihuahua/chi2.jpg",
+        "/assets/imgs/chihuahua/chi3.jpg",
+        "/assets/imgs/chihuahua/chi4.jpg"
+    ],
+    "destaque": false
+    },
+    {
+    "id": 8,
+    "nome": "Golden Retriever",
+    "descricaoCurta": "Amigável, confiável e ótimo para famílias.",
+    "imagemPrincipal": "/assets/imgs/golden/golden1.jpg",
+    "caracteristicas": [
+        "Nível de energia: Alto",
+        "Personalidade: Amigável, inteligente, confiável",
+        "Pelagem: Densa e repelente à água",
+        "Expectativa de vida: 10-12 anos"
+    ],
+    "maisFotos": [
+        "/assets/imgs/golden/golden2.jpg",
+        "/assets/imgs/golden/golden3.jpg",
+        "/assets/imgs/golden/golden4.jpg"
+    ],
+    "destaque": true
+    }
+],
+"usuarios": [
+    {
+    "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+    "login": "admin",
+    "senha": "123",
+    "nome": "Administrador do Sistema",
+    "email": "admin@abc.com",
+    "admin": true
+    },
+    {
+    "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+    "login": "user",
+    "senha": "123",
+    "nome": "Usuario Comum",
+    "email": "user@abc.com",
+    "admin": false
+    }
+],
+"favoritos": []
+}

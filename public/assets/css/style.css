@@ -1,0 +1,180 @@
+/* --------- Base --------- */
+body {
+font-family: "Roboto", sans-serif;
+background-color: #cde4de;
+color: #333;
+}
+
+a {
+text-decoration: none;
+}
+
+h1, h2, h3 {
+margin-bottom: 15px;
+}
+
+/* --------- Navbar / Header --------- */
+.navbar-brand span {
+font-weight: 600;
+font-size: 1.4rem;
+}
+
+.navbar {
+margin-bottom: 0;
+}
+
+/* --------- Footer --------- */
+footer h3 {
+border-bottom: 1px solid #41bcaa;
+padding-bottom: 5px;
+}
+
+footer a {
+color: #fff;
+}
+
+/* --------- Carrossel --------- */
+.carousel-img {
+aspect-ratio: 16 / 9;
+object-fit: cover;
+width: 100%;
+}
+
+.carousel-caption {
+background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+border-radius: 8px;
+padding: 15px;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+margin: 0;
+box-sizing: border-box;
+text-align: left;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+color: #fff;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 767px) {
+.carousel-caption {
+    padding: 10px;
+}
+.carousel-caption h5 {
+    font-size: 1.2rem;
+}
+.carousel-caption p {
+    font-size: 0.9rem;
+}
+}
+
+/* --------- Cards das raças (home) --------- */
+.card-raca {
+border: 1px solid #ccc;
+border-radius: 8px;
+text-align: center;
+padding: 10px;
+background: #fff;
+transition: box-shadow 0.3s ease, transform 0.3s ease;
+display: block;
+color: #333;
+}
+
+.card-raca:hover {
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transform: translateY(-2px);
+text-decoration: none;
+}
+
+.card-raca img {
+width: 100%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+border-radius: 4px;
+background-color: #eee;
+margin: 0 auto;
+}
+
+.card-raca span {
+display: block;
+margin-top: 10px;
+font-weight: bold;
+}
+
+/* Botão de favorito nos cards */
+.btn-fav {
+border: none;
+}
+
+/* --------- Seção Visualização (gráfico) --------- */
+#grafico-energia {
+background-color: #fff;
+border-radius: 8px;
+padding: 10px;
+}
+
+/* --------- Página de Detalhes --------- */
+.info-container {
+background: #fff;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 8px;
+}
+
+.info-container .foto-principal img {
+border: 1px solid #ccc;
+background-color: #eee;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+width: 100%;
+}
+
+.info-container .caracteristicas ul {
+margin-top: 10px;
+}
+
+/* Mais fotos da raça */
+.grid-mais-fotos img,
+.mais-fotos img {
+border: 1px solid #ccc;
+background-color: #eee;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+width: 100%;
+}
+
+/* Botão favorito na página de detalhes */
+#btn-favorito-detalhe {
+font-size: 2rem;
+line-height: 1;
+}
+
+/* --------- Formulários (login, cadastro) --------- */
+form .form-label {
+font-weight: 500;
+}
+
+#login-erro {
+min-height: 20px;
+}
+
+#cad-sucesso {
+min-height: 20px;
+}
+
+/* --------- Autor (home) --------- */
+section h2 {
+font-weight: 600;
+}
+
+.card-body img.rounded-circle {
+border: 2px solid #41bcaa;
+}
+
+/* --------- Helpers --------- */
+.mt-auto {
+margin-top: auto;
+}
